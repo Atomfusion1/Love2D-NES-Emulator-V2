@@ -10,6 +10,6 @@ Implemented mappers 0, 1, 2, 3, 4, 7, 9, though they're mostly behaving, no guar
 
 Might be the final stage of the emulator, I'm happy with it and it's surpassed expectations. Been a fun ride. Catch you later! 
 
-![Screenshot](MainScren1.png)
+![Screenshot](MainScreen1.png)
 
-![Screenshot](MainScren2.png)
+![Screenshot](MainScreen2.png)
