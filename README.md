@@ -11,8 +11,6 @@ Implemented mappers 0, 1, 2, 3, 4, 7, 9, though they're mostly behaving, no guar
 
 Might be the final stage of the emulator, I'm happy with it and it's surpassed expectations. Been a fun ride.
 
-![Video](Nes Emulator Tests.mp4)
-
 ![Screenshot](MainScreen1.png)
 
 ![Screenshot](MainScreen2.png)
