@@ -9,7 +9,9 @@ Current roms now get saved in nesEmuState.txt.
 Implemented mappers 0, 1, 2, 3, 4, 7, 9, though they're mostly behaving, no guarantees! 
 80-90% of games are playable, but expect a few display bugs and issues.
 
-Might be the final stage of the emulator, I'm happy with it and it's surpassed expectations. Been a fun ride. Catch you later! 
+Might be the final stage of the emulator, I'm happy with it and it's surpassed expectations. Been a fun ride.
+
+![Video](Nes Emulator Tests.mp4)
 
 ![Screenshot](MainScreen1.png)
 
