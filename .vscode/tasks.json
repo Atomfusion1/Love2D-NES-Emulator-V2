@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Love2D",
+            "type": "shell",
+            //"command": "taskkill -f -im lovec.exe",
+
+            "command": " F:\\PCLOUD\\Coding\\Love2D\\Love2D\\Love11.4\\lovec.exe .",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+                "showReuseMessage": false,
+                "confirmOnKill": false,
+                "Lua.workspace.checkThirdParty": false,
+                "terminal.integrated.confirmOnKill": false
+            },
+        }
+    ]
+}

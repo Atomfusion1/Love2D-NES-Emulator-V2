@@ -1,0 +1,26 @@
+First, you have to simulate the NES's memory map.
+0000-07FF is RAM, 
+0800-1FFF are mirrors of RAM (you AND the address with 07FF to get the effective address)
+2000-2007 is how the CPU writes to the PPU, 
+2008-3FFF are mirrors of that address range.
+4000-401F is for IO ports and sound
+4020-4FFF is rarely used, but can be used by some cartridges
+5000-5FFF is rarely used, but can be used by some cartridges, often as bank switching registers, not actual memory, but some cartridges put RAM there
+6000-7FFF is often cartridge WRAM. Since emulators usually emulate this whether it actually exists in the cartridge or not, there's a little bit of controversy about NES headers not adequately representing a cartridge.
+8000-FFFF is the main area the cartridge ROM is mapped to in memory. 
+Sometimes it can be bank switched, usually in 32k, 16k, or 8k sized banks.
+
+The NES header takes up 16 bytes, after that is the PRG pages, 
+then after that is the CHR pages. You look at the header to see how big the PRG and CHR of the cartridge are, 
+see documentation for more details. The NES header does not exist outside of .NES files, 
+you won't find it on any NES cartridges.
+
+So you load a Mapper 0 (NROM) cartridge into memory, and the first two PRG banks appear in NES memory at 8000-FFFF. 
+If there is only one 16k bank, then it is mirrored at 8000-BFFF and C000-FFFF.
+
+When the CPU boots up, it reads the Reset vector, located at FFFC. 
+That contains a 16-bit value which tells the CPU where to jump to.
+The first thing a game will do when it starts up is repeatedly read PPU register 2002 to wait for the NES to warm up, 
+so you won't see a game doing anything until you throw in some rudimentary PPU emulation.
+Then the game clears the RAM, and waits for the NES to warm up some more. 
+Then the system is ready, and the game will start running.

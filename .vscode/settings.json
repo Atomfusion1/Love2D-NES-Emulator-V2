@@ -1,0 +1,36 @@
+{
+    "Lua.diagnostics.globals": [
+        "love",
+        "bit",
+        "jit"
+    ],
+    "love2DLauncher.path": "F:\\PCLOUD\\Coding\\Love2D\\Love2D\\Love11.4\\love.exe",
+    "lövelauncher.saveAllOnLaunch": true,
+    "lövelauncher.useConsoleSubsystem": true,
+    "Lua.runtime.version": "Lua 5.4",
+    "Lua.workspace.library": [
+        "${3rd}/love2d/library"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "terminal.integrated.confirmOnKill": "never",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#3434ab",
+        "activityBar.background": "#3434ab",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#180707",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#3434ab",
+        "statusBar.background": "#282884",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#3434ab",
+        "statusBarItem.remoteBackground": "#282884",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#282884",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#28288499",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#282884"
+}

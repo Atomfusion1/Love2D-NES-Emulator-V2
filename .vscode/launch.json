@@ -1,0 +1,19 @@
+{
+  "configurations": 
+  [
+      {
+          "type": "lua-local",
+          "request": "launch",
+          "name": "Debug LOVE",
+          "program":
+          {
+              "command": "love"
+          },
+          "args": 
+          [
+              "${workspaceFolder}",
+              "vsc_debug"
+          ],
+      },
+  ]
+}
